@@ -1,0 +1,105 @@
+/* Mother & Baby Care Products Specific Styles */
+
+/* Product Categories for Mother Care */
+.product-categories {
+  margin: 3rem 0;
+}
+
+.category-section {
+  margin: 3rem 0;
+}
+
+.category-section h4 {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.product-item {
+  background-color: var(--secondary-color);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+}
+
+.product-item strong {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.product-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.product-item li {
+  padding: 0.4rem 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.product-item li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+}
+
+/* Store Info */
+.store-info {
+  background-color: var(--background);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.store-info h3 {
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.store-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.detail-item {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius);
+}
+
+.detail-item strong {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.detail-item p {
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Responsive Design for Mother Care */
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}

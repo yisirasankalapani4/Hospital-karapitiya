@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patient Registration - Maternity & Infant Care Hospital</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/register.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <h1>Karapitiya Maternity Hospital</h1>
+          <p class="hospital-tagline">
+            German – Sri Lanka Friendship Hospital for Women in Galle
+          </p>
+        </div>
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="register.html" class="nav-link active">Register</a>
+          <a href="clinics.html" class="nav-link">Clinics</a>
+          <div class="dropdown">
+            <a href="#" class="nav-link dropdown-toggle">Other Services</a>
+            <div class="dropdown-menu">
+              <a href="pharmacy.html" class="dropdown-link"
+                >Pharmacy Services</a
+              >
+              <a href="laboratory.html" class="dropdown-link"
+                >Laboratory Services</a
+              >
+              <a href="emergency.html" class="dropdown-link"
+                >Emergency Ambulance</a
+              >
+              <a href="mother-care.html" class="dropdown-link"
+                >Mother & Baby Care</a
+              >
+              <a href="nutrition.html" class="dropdown-link"
+                >Nutrition Counseling</a
+              >
+            </div>
+          </div>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <div class="register-container">
+          <h2 class="page-title">Patient Registration</h2>
+          <p class="registration-info">
+            <strong>Eligible Patients:</strong> Pregnant mothers and mothers
+            with babies under 1 year<br />
+            <strong>Free Services:</strong> All consultations and medications
+            provided free by Karapitiya Maternity Hospital
+          </p>
+          <form id="registrationForm" class="registration-form">
+            <div class="form-group">
+              <label for="patientType">Patient Category *</label>
+              <select id="patientType" name="patientType" required>
+                <option value="">Select patient category</option>
+                <option value="pregnant">Pregnant Mother</option>
+                <option value="mother_with_infant">
+                  Mother with Baby (under 1 year)
+                </option>
+              </select>
+            </div>
+
+            <div
+              class="form-group"
+              id="pregnancyWeeksGroup"
+              style="display: none"
+            >
+              <label for="pregnancyWeeks">Pregnancy Weeks</label>
+              <input
+                type="number"
+                id="pregnancyWeeks"
+                name="pregnancyWeeks"
+                min="1"
+                max="42"
+                placeholder="Enter pregnancy weeks"
+              />
+            </div>
+
+            <div class="form-group" id="babyAgeGroup" style="display: none">
+              <label for="babyAge">Baby's Age (in months)</label>
+              <input
+                type="number"
+                id="babyAge"
+                name="babyAge"
+                min="0"
+                max="12"
+                placeholder="Enter baby's age in months"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="patientName">Mother's Full Name *</label>
+              <input type="text" id="patientName" name="patientName" required />
+            </div>
+
+            <div class="form-group">
+              <label for="patientEmail">Email Address (Optional)</label>
+              <input type="email" id="patientEmail" name="patientEmail" />
+            </div>
+
+            <div class="form-group">
+              <label for="patientPhone">Phone Number *</label>
+              <input
+                type="tel"
+                id="patientPhone"
+                name="patientPhone"
+                required
+                placeholder="07XXXXXXXX"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="patientAge">Mother's Age *</label>
+              <input
+                type="number"
+                id="patientAge"
+                name="patientAge"
+                min="15"
+                max="50"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="nicNumber">NIC Number *</label>
+              <input
+                type="text"
+                id="nicNumber"
+                name="nicNumber"
+                required
+                placeholder="XXXXXXXXXV or XXXXXXXXXXXX"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="clinicSelect">Select Clinic & Doctor *</label>
+              <div class="clinic-selection" id="clinicSelection">
+                <p style="color: var(--text-secondary)">
+                  Please select patient category first
+                </p>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="appointmentReason">Reason for Visit</label>
+              <textarea
+                id="appointmentReason"
+                name="appointmentReason"
+                rows="4"
+                placeholder="Please describe your concerns, symptoms, or reason for visit..."
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label class="checkbox-container">
+                <input
+                  type="checkbox"
+                  id="freeServiceAcknowledge"
+                  name="freeServiceAcknowledge"
+                  required
+                />
+                I acknowledge that all services and medications are provided
+                free by Karapitiya Maternity Hospital
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              Register
+            </button>
+          </form>
+
+          <div
+            id="registrationSuccess"
+            class="success-message"
+            style="display: none"
+          >
+            <h3>Registration Successful!</h3>
+            <p>
+              Your appointment has been booked. Please check the
+              <a href="clinics.html">clinics page</a> for queue status.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; 2025 Karapitiya Maternity Hospital - Teaching Hospital
+          Karapitiya. Government of Sri Lanka. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/register.js"></script>
+  </body>
+</html>
+
+<div class="container">Content</div>         <!-- Generic container -->
+<header>Header content</header>             <!-- Page header -->
+<main>Main content</main>                   <!-- Main content area -->
+<section>Section of content</section>       <!-- Content sections -->
+<footer>Footer content</footer>            <!-- Page footer -->
+
+
+

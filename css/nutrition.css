@@ -1,0 +1,168 @@
+/* Nutrition Counseling Specific Styles */
+
+/* Nutrition Services */
+.nutrition-services {
+  margin: 3rem 0;
+}
+
+.service-category {
+  margin: 2rem 0;
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+}
+
+.service-category h4 {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.service-category ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0.5rem;
+}
+
+.service-category li {
+  padding: 0.6rem 0;
+  color: var(--text-secondary);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.service-category li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Nutrition Tips */
+.nutrition-tips {
+  margin: 3rem 0;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.tip-item {
+  background-color: var(--background);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.tip-item h4 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.tip-item p {
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+/* Consultation Info */
+.consultation-info {
+  background-color: var(--background);
+  padding: 3rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.consultation-info h3 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.consultation-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: var(--background);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.step-number {
+  background-color: var(--primary-color);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.step h4 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.step p {
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+.consultation-hours {
+  text-align: center;
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+}
+
+.consultation-hours h4 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.consultation-hours p {
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Responsive Design for Nutrition */
+@media (max-width: 768px) {
+  .consultation-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .service-category ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .consultation-info {
+    padding: 2rem;
+  }
+}

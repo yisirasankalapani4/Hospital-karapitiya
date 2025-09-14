@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Karapitiya Maternity Hospital</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <h1>Karapitiya Maternity Hospital</h1>
+          <p class="hospital-tagline">
+            German – Sri Lanka Friendship Hospital for Women in Galle
+          </p>
+        </div>
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="register.html" class="nav-link">Register</a>
+          <a href="clinics.html" class="nav-link">Clinics</a>
+          <div class="dropdown">
+            <a href="#" class="nav-link dropdown-toggle">Other Services</a>
+            <div class="dropdown-menu">
+              <a href="pharmacy.html" class="dropdown-link"
+                >Pharmacy Services</a
+              >
+              <a href="laboratory.html" class="dropdown-link"
+                >Laboratory Services</a
+              >
+              <a href="emergency.html" class="dropdown-link"
+                >Emergency Ambulance</a
+              >
+              <a href="mother-care.html" class="dropdown-link"
+                >Mother & Baby Care</a
+              >
+              <a href="nutrition.html" class="dropdown-link"
+                >Nutrition Counseling</a
+              >
+            </div>
+          </div>
+          <a href="contact.html" class="nav-link active">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <h2 class="page-title">Contact Information</h2>
+        <p class="page-subtitle">
+          Get in touch with Karapitiya Maternity Hospital for appointments,
+          inquiries, or emergency services.
+        </p>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-section">
+              <h3>Hospital Address</h3>
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-content">
+                  <h4>German – Sri Lanka Friendship Hospital for Women in Galle</h4>
+                  <p>Cross Road, Galle 80000</p>
+                  <p>Southern Province, Sri Lanka</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-section">
+              <h3>Phone Numbers</h3>
+              <div class="info-item">
+                <div class="info-icon">📞</div>
+                <div class="info-content">
+                  <h4>Main Hospital</h4>
+                  <p><strong>+94 912 018 200</strong></p>
+                  <p class="info-note">24/7 Emergency Services</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🏥</div>
+                <div class="info-content">
+                  <h4>Maternity Ward Direct</h4>
+                  <p><strong>+94 912 018 200</strong></p>
+                  <p class="info-note">Maternity emergencies & inquiries</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">📋</div>
+                <div class="info-content">
+                  <h4>Appointments & Registration</h4>
+                  <p><strong>+94 912 018 200</strong></p>
+                  <p class="info-note">8:00 AM - 4:00 PM (Mon-Fri)</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-section">
+              <h3>Emergency Services</h3>
+              <div class="emergency-info">
+                <div class="emergency-card">
+                  <h4>🚨 Emergency Hotline</h4>
+                  <p class="emergency-number">1990</p>
+                  <p>National Emergency Ambulance Service</p>
+                </div>
+                <div class="emergency-card">
+                  <h4>🆘 Hospital Emergency</h4>
+                  <p class="emergency-number">+94 912 018 200</p>
+                  <p>Direct to hospital emergency department</p>
+                </div>
+              </div>
+            </div>
+
+           
+          </div>
+
+          <div class="contact-form-section">
+            <h3>Send Us a Message</h3>
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="inquiryType">Type of Inquiry *</label>
+                <select id="inquiryType" name="inquiryType" required>
+                  <option value="">Select inquiry type</option>
+                  <option value="appointment">Appointment Request</option>
+                  <option value="general">General Information</option>
+                  <option value="complaint">Complaint or Feedback</option>
+                  <option value="medical">Medical Inquiry</option>
+                  <option value="emergency">
+                    Emergency (Call directly instead!)
+                  </option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contactName">Your Name *</label>
+                <input
+                  type="text"
+                  id="contactName"
+                  name="contactName"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="contactPhone">Phone Number *</label>
+                <input
+                  type="tel"
+                  id="contactPhone"
+                  name="contactPhone"
+                  required
+                  placeholder="07XXXXXXXX"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail">Email Address (Optional)</label>
+                <input type="email" id="contactEmail" name="contactEmail" />
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage">Message *</label>
+                <textarea
+                  id="contactMessage"
+                  name="contactMessage"
+                  rows="6"
+                  required
+                  placeholder="Please describe your inquiry in detail..."
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <label class="checkbox-container">
+                  <input
+                    type="checkbox"
+                    id="privacyConsent"
+                    name="privacyConsent"
+                    required
+                  />
+                  I consent to the processing of my personal data for the
+                  purpose of this inquiry
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                Send Message
+              </button>
+            </form>
+
+            <div class="form-note">
+              <p>
+                <strong>Note:</strong> For medical emergencies, please call
+                directly or visit the emergency department. This form is for
+                non-urgent inquiries only.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="visiting-info">
+          <h3>Visiting Information</h3>
+          <div class="visiting-grid">
+            <div class="visiting-card">
+              <h4>⏰ Visiting Hours</h4>
+              <ul>
+                <li><strong>General Wards:</strong> 4:00 PM - 6:00 PM</li>
+                <li>
+                  <strong>Maternity Ward:</strong> 10:00 AM - 12:00 PM, 4:00 PM
+                  - 6:00 PM
+                </li>
+                <li>
+                  <strong>NICU:</strong> Limited visiting by appointment only
+                </li>
+                <li>
+                  <strong>Emergency Ward:</strong> 24/7 for immediate family
+                </li>
+              </ul>
+            </div>
+            <div class="visiting-card">
+              <h4>🚗 Transportation</h4>
+              <ul>
+                <li>
+                  <strong>By Bus:</strong> Galle-Matara route buses stop at
+                  Karapitiya
+                </li>
+                <li>
+                  <strong>By Train:</strong> Galle Railway Station (5 km away)
+                </li>
+                <li>
+                  <strong>By Car:</strong> Free parking available on hospital
+                  grounds
+                </li>
+                <li>
+                  <strong>Ambulance:</strong> Available 24/7 for emergencies
+                </li>
+              </ul>
+            </div>
+            <div class="visiting-card">
+              <h4>📋 What to Bring</h4>
+              <ul>
+                <li>National Identity Card (NIC)</li>
+                <li>Previous medical records (if any)</li>
+                <li>Current medications list</li>
+                <li>Insurance documents (if applicable)</li>
+                <li>Emergency contact information</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; 2025 Karapitiya Maternity Hospital - Teaching Hospital
+          Karapitiya. Government of Sri Lanka. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>

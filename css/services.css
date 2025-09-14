@@ -1,0 +1,653 @@
+/* Services Page Styles */
+
+/* Page Hero Section */
+.page-hero {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--primary-dark) 100%
+  );
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.emergency-hero {
+  background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+}
+
+.page-hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.page-hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Emergency Contact Styling */
+.emergency-contact {
+  margin-top: 2rem;
+}
+
+.emergency-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  backdrop-filter: blur(10px);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.emergency-icon {
+  font-size: 2rem;
+}
+
+.phone-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Service Content */
+.service-content {
+  padding: 4rem 0;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  align-items: start;
+  margin-bottom: 3rem;
+}
+
+.service-info h2 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-info p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Service Features Grid */
+.service-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.feature-item {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.feature-item h3 {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.feature-item p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Service Image */
+.service-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Service Lists */
+.service-list {
+  background-color: var(--background);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  margin: 2rem 0;
+}
+
+.service-list h3 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.service-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border-color);
+  position: relative;
+  padding-left: 2rem;
+}
+
+.service-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.service-list li:last-child {
+  border-bottom: none;
+}
+
+/* Test Categories for Laboratory */
+.test-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.category {
+  background-color: var(--secondary-color);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+}
+
+.category h4 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category li {
+  padding: 0.5rem 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  position: relative;
+  padding-left: 1.5rem;
+  line-height: 1.5;
+}
+
+.category li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+  top: 0.5rem;
+}
+
+/* Emergency Scenarios */
+.emergency-scenarios {
+  margin: 3rem 0;
+}
+
+.scenario-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.scenario {
+  background-color: #ffebee;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  border-left: 4px solid #d32f2f;
+}
+
+.scenario h4 {
+  color: #d32f2f;
+  margin-bottom: 1rem;
+}
+
+.scenario ul {
+  list-style: none;
+  padding: 0;
+}
+
+.scenario li {
+  padding: 0.5rem 0;
+  color: var(--text-secondary);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.scenario li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+/* Service Coverage */
+.service-coverage {
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  margin: 2rem 0;
+}
+
+.service-coverage h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+/* Hours Info */
+.hours-info {
+  background-color: var(--background);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.hours-info h3 {
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.hours-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.hours-item {
+  padding: 1.5rem;
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius);
+}
+
+.hours-item strong {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+.hours-item p {
+  margin: 0.5rem 0 0 0;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Emergency Instructions */
+.emergency-instructions {
+  background-color: var(--secondary-color);
+  padding: 3rem;
+  border-radius: var(--border-radius);
+  margin: 3rem 0;
+}
+
+.emergency-instructions h3 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.instruction-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: var(--background);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.step-number {
+  background-color: var(--primary-color);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.step h4 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.step p {
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+/* Product Categories for Mother Care */
+.product-categories {
+  margin: 3rem 0;
+}
+
+.category-section {
+  margin: 3rem 0;
+}
+
+.category-section h4 {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.product-item {
+  background-color: var(--secondary-color);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+}
+
+.product-item strong {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.product-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.product-item li {
+  padding: 0.4rem 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.product-item li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+}
+
+/* Store Info */
+.store-info {
+  background-color: var(--background);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.store-info h3 {
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.store-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.detail-item {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius);
+}
+
+.detail-item strong {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.detail-item p {
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Nutrition Services */
+.nutrition-services {
+  margin: 3rem 0;
+}
+
+.service-category {
+  margin: 2rem 0;
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+}
+
+.service-category h4 {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.service-category ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0.5rem;
+}
+
+.service-category li {
+  padding: 0.6rem 0;
+  color: var(--text-secondary);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.service-category li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Nutrition Tips */
+.nutrition-tips {
+  margin: 3rem 0;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.tip-item {
+  background-color: var(--background);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.tip-item h4 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.tip-item p {
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+/* Consultation Info */
+.consultation-info {
+  background-color: var(--background);
+  padding: 3rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.consultation-info h3 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.consultation-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.consultation-hours {
+  text-align: center;
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+}
+
+.consultation-hours h4 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.consultation-hours p {
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .page-hero-content p {
+    font-size: 1rem;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .service-image {
+    order: -1;
+  }
+
+  .service-image img {
+    height: 250px;
+  }
+
+  .service-features {
+    grid-template-columns: 1fr;
+  }
+
+  .emergency-number {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .instruction-steps,
+  .consultation-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .product-grid,
+  .test-categories,
+  .scenario-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-category ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-hero {
+    padding: 3rem 0;
+  }
+
+  .page-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .service-content {
+    padding: 2rem 0;
+  }
+
+  .feature-item {
+    padding: 1.5rem;
+  }
+
+  .emergency-instructions,
+  .consultation-info {
+    padding: 2rem;
+  }
+}

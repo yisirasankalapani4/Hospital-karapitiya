@@ -1,0 +1,274 @@
+/* Contact Page Specific Styles */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin: 2rem 0;
+}
+
+.contact-info {
+  background-color: var(--background);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.contact-section {
+  margin-bottom: 2.5rem;
+}
+
+.contact-section h3 {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 0.5rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius);
+}
+
+.info-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.info-content h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+.info-content p {
+  margin: 0.2rem 0;
+  line-height: 1.4;
+}
+
+.info-note {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* Emergency Services */
+.emergency-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.emergency-card {
+  background: linear-gradient(135deg, #ff4444, #cc0000);
+  color: white;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.emergency-card h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+}
+
+.emergency-number {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.emergency-card p:last-child {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Departments */
+.departments-list {
+  background-color: var(--secondary-color);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+}
+
+.dept-item {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.95rem;
+}
+
+.dept-item:last-child {
+  border-bottom: none;
+}
+
+/* Contact Form */
+.contact-form-section {
+  background-color: var(--background);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.contact-form-section h3 {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 0.5rem;
+}
+
+.contact-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.contact-form .checkbox-container {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+  line-height: 1.4;
+  font-size: 0.9rem;
+}
+
+.contact-form .checkbox-container input[type="checkbox"] {
+  margin: 0 0.5rem 0 0;
+  margin-top: 0.1rem;
+  width: 16px;
+  height: 16px;
+  accent-color: var(--primary-color);
+  flex-shrink: 0;
+}
+
+.form-note {
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  margin-top: 1.5rem;
+  border-left: 4px solid var(--accent-color);
+}
+
+.form-note p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* Visiting Information */
+.visiting-info {
+  margin-top: 3rem;
+  background-color: var(--background);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.visiting-info h3 {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.visiting-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.visiting-card {
+  background-color: var(--secondary-color);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-color);
+}
+
+.visiting-card h4 {
+  color: var(--primary-color);
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+}
+
+.visiting-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.visiting-card li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.visiting-card li:last-child {
+  border-bottom: none;
+}
+
+.visiting-card strong {
+  color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .emergency-info {
+    grid-template-columns: 1fr;
+  }
+
+  .emergency-card {
+    padding: 1rem;
+  }
+
+  .emergency-number {
+    font-size: 1.5rem;
+  }
+
+  .visiting-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info,
+  .contact-form-section,
+  .visiting-info {
+    padding: 1.5rem;
+  }
+
+  .info-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .info-icon {
+    margin: 0 0 0.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-info,
+  .contact-form-section,
+  .visiting-info {
+    padding: 1rem;
+  }
+
+  .visiting-card {
+    padding: 1rem;
+  }
+
+  .emergency-card {
+    padding: 0.75rem;
+  }
+
+  .emergency-number {
+    font-size: 1.3rem;
+  }
+}

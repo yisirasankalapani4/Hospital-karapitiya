@@ -1,0 +1,466 @@
+/* Pharmacy Service Specific Styles */
+
+/* Service Sidebar Styles */
+.service-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.service-sidebar .service-image {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.service-sidebar .service-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.service-sidebar .service-image:hover img {
+  transform: scale(1.05);
+}
+
+/* Pharmacy Highlights */
+.pharmacy-highlights {
+  background-color: var(--background);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.pharmacy-highlights h3 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.highlight-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.highlight-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-icon {
+  font-size: 2rem;
+  min-width: 40px;
+  text-align: center;
+}
+
+.highlight-card h4 {
+  color: var(--primary-color);
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.highlight-card p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Emergency Contact */
+.emergency-contact {
+  background-color: #fff3e0;
+  border: 2px solid #ff9800;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.emergency-contact h3 {
+  color: #e65100;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+  color: #ff9800;
+}
+
+.contact-details {
+  text-align: left;
+  flex: 1;
+}
+
+.contact-details h4 {
+  color: #e65100;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.phone-number {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 0.5rem 0;
+}
+
+.contact-note {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* Responsive Design for Sidebar */
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .contact-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-details {
+    text-align: center;
+  }
+
+  .highlight-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .highlight-icon {
+    align-self: center;
+  }
+}
+
+/* Prescription Upload and Delivery Section */
+.prescription-delivery-section {
+  background-color: var(--background);
+  padding: 3rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  margin: 3rem 0;
+}
+
+.prescription-delivery-section h3 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.prescription-delivery-section > p {
+  text-align: center;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+.prescription-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-section {
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 2rem;
+}
+
+.form-section h4 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+/* Upload Area */
+.upload-area {
+  border: 2px dashed var(--primary-color);
+  border-radius: var(--border-radius);
+  padding: 3rem;
+  text-align: center;
+  background-color: var(--background);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.upload-area:hover {
+  border-color: var(--primary-dark);
+  background-color: rgba(45, 143, 71, 0.05);
+}
+
+.upload-area.dragover {
+  border-color: var(--primary-dark);
+  background-color: rgba(45, 143, 71, 0.1);
+}
+
+.upload-content {
+  pointer-events: none;
+}
+
+.upload-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.upload-link {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.upload-note {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+}
+
+.uploaded-files {
+  margin-top: 1rem;
+}
+
+.uploaded-file {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--background);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 0.5rem;
+  box-shadow: var(--shadow);
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.file-icon {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.file-details h5 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
+
+.file-details p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+}
+
+.remove-file {
+  background: none;
+  border: none;
+  color: #d32f2f;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.remove-file:hover {
+  background-color: rgba(211, 47, 47, 0.1);
+}
+
+/* Form Grid */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(45, 143, 71, 0.2);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Delivery Calculator */
+.delivery-calculator {
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 2rem;
+}
+
+.delivery-calculator h4 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.calculator-info {
+  margin-bottom: 1.5rem;
+}
+
+.free-medicine-note {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  border-left: 4px solid #28a745;
+  margin: 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.calculator-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.cost-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.cost-item.total {
+  border-bottom: none;
+  border-top: 2px solid var(--primary-color);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.free-cost {
+  color: #28a745;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.cost-note {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  text-align: center;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+/* Form Actions */
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.form-actions .btn {
+  min-width: 200px;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+}
+
+/* Success/Error Messages */
+.message {
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .prescription-delivery-section {
+    padding: 2rem;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-actions .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .upload-area {
+    padding: 2rem;
+  }
+}

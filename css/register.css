@@ -1,0 +1,197 @@
+/* Registration Page Specific Styles */
+.register-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: var(--background);
+  padding: 3rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.registration-info {
+  background-color: var(--secondary-color);
+  border-left: 4px solid var(--primary-color);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: var(--border-radius);
+  line-height: 1.6;
+}
+
+.registration-form {
+  margin-top: 2rem;
+}
+
+/* Clinic Selection Styles */
+.clinic-selection {
+  margin-top: 0.5rem;
+}
+
+.clinic-info {
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--primary-color);
+}
+
+.clinic-info h4 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.clinic-info p {
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Doctor Selection Styles */
+.doctor-selection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.doctor-card {
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: var(--transition);
+  background-color: var(--background);
+}
+
+.doctor-card:hover {
+  border-color: var(--accent-color);
+  box-shadow: var(--shadow);
+}
+
+.doctor-card.selected {
+  border-color: var(--primary-color);
+  background-color: var(--secondary-color);
+  box-shadow: var(--shadow);
+}
+
+.doctor-card input[type="radio"] {
+  display: none;
+}
+
+.doctor-info {
+  text-align: center;
+}
+
+.doctor-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.doctor-specialty {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.doctor-day {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.doctor-card.selected .doctor-day {
+  background-color: var(--primary-dark);
+}
+
+/* Form Validation Styles */
+.form-group.error input,
+.form-group.error textarea,
+.form-group.error select {
+  border-color: #f44336;
+}
+
+.error-message {
+  color: #f44336;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+/* Checkbox Styles */
+.checkbox-container {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+  line-height: 1.4;
+  font-size: 1rem;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin: 0 0.5rem 0 0;
+  margin-top: 0.1rem;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--primary-color);
+  flex-shrink: 0;
+}
+
+.checkbox-container .checkmark {
+  flex: 1;
+}
+
+/* Phone number placeholder styling */
+input[type="tel"]::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+/* Loading State */
+.btn.loading {
+  position: relative;
+  color: transparent;
+}
+
+.btn.loading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid transparent;
+  border-top: 2px solid currentColor;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  color: white;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Responsive Design for Registration */
+@media (max-width: 768px) {
+  .register-container {
+    padding: 2rem;
+    margin: 1rem;
+  }
+
+  .doctor-selection {
+    grid-template-columns: 1fr;
+  }
+
+  .doctor-card {
+    padding: 1.2rem;
+  }
+}
